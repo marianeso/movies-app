@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="277" id="KGk-i7-Jjw" customClass="FIlmTableViewCell" customModule="MariFlix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="277"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="277"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9g-qV-Ftb">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="277"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.84999999999999998" height="1"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00L-MT-C6H" customClass="GradientView" customModule="MariFlix" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="207" width="301" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="6kD-86-aHE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.3294117647" green="0.67450980390000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8Sa-gc-FWi">
+                        <rect key="frame" x="16" y="222.5" width="269" height="44.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Filme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTJ-B4-rVs">
+                                <rect key="frame" x="0.0" y="0.0" width="121" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="onb-Jo-0Nu">
+                                <rect key="frame" x="0.0" y="26.5" width="86" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-qt-3lZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="29" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO2-ra-Tfe">
+                                        <rect key="frame" x="42" y="0.0" width="7" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiB-e6-2Uf">
+                                        <rect key="frame" x="62" y="0.0" width="24" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wna-FX-iqA">
+                        <rect key="frame" x="270" y="8.5" width="22" height="20"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Wna-FX-iqA" secondAttribute="trailing" constant="9" id="0aa-kf-Pn2"/>
+                    <constraint firstAttribute="bottom" secondItem="8Sa-gc-FWi" secondAttribute="bottom" constant="10" id="3Jl-zV-MI1"/>
+                    <constraint firstAttribute="trailing" secondItem="b9g-qV-Ftb" secondAttribute="trailing" id="43c-dN-Lzv"/>
+                    <constraint firstItem="00L-MT-C6H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7iI-iJ-7C2"/>
+                    <constraint firstItem="Wna-FX-iqA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="BIa-9X-Ipv"/>
+                    <constraint firstAttribute="bottom" secondItem="00L-MT-C6H" secondAttribute="bottom" id="EPR-04-y4R"/>
+                    <constraint firstItem="8Sa-gc-FWi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QYD-GU-kRY"/>
+                    <constraint firstAttribute="trailing" secondItem="8Sa-gc-FWi" secondAttribute="trailing" constant="16" id="RrG-tI-yYM"/>
+                    <constraint firstItem="b9g-qV-Ftb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TN4-sg-I4N"/>
+                    <constraint firstAttribute="bottom" secondItem="b9g-qV-Ftb" secondAttribute="bottom" id="e5Q-bd-hpN"/>
+                    <constraint firstItem="b9g-qV-Ftb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tul-ux-dQf"/>
+                    <constraint firstAttribute="trailing" secondItem="00L-MT-C6H" secondAttribute="trailing" id="ulb-ly-olN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favoriteFilm" destination="Wna-FX-iqA" id="bfU-Iz-guU"/>
+                <outlet property="filmImage" destination="b9g-qV-Ftb" id="dWF-Vn-14y"/>
+                <outlet property="nameFilm" destination="nTJ-B4-rVs" id="XIf-nQ-Ld5"/>
+                <outlet property="rateFilme" destination="XiB-e6-2Uf" id="hMz-aZ-ZwN"/>
+                <outlet property="yearFIlm" destination="z8f-qt-3lZ" id="glM-mr-3kX"/>
+            </connections>
+            <point key="canvasLocation" x="96.376811594202906" y="112.16517857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

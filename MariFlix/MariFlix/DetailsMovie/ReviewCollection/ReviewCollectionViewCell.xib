@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReviewCollectionViewCell" customModule="MariFlix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="88"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAc-Fh-gr2">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="88"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdf-fT-gcH">
+                        <rect key="frame" x="12" y="12" width="180" height="64"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Jdf-fT-gcH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="0Ca-vC-2Hy"/>
+                <constraint firstAttribute="trailing" secondItem="pAc-Fh-gr2" secondAttribute="trailing" id="0FU-5i-dbW"/>
+                <constraint firstAttribute="bottom" secondItem="Jdf-fT-gcH" secondAttribute="bottom" constant="12" id="7rx-iS-B9Z"/>
+                <constraint firstAttribute="trailing" secondItem="Jdf-fT-gcH" secondAttribute="trailing" constant="12" id="E5r-8Y-c8d"/>
+                <constraint firstAttribute="bottom" secondItem="pAc-Fh-gr2" secondAttribute="bottom" id="EXW-r4-5BI"/>
+                <constraint firstItem="Jdf-fT-gcH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="OdH-WH-UUe"/>
+                <constraint firstItem="pAc-Fh-gr2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jaE-Rk-njE"/>
+                <constraint firstItem="pAc-Fh-gr2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k50-EW-nRk"/>
+            </constraints>
+            <size key="customSize" width="204" height="88"/>
+            <connections>
+                <outlet property="backgroudView" destination="pAc-Fh-gr2" id="ETA-NU-RPa"/>
+                <outlet property="reviewDescription" destination="Jdf-fT-gcH" id="FIZ-5q-mwg"/>
+            </connections>
+            <point key="canvasLocation" x="20.289855072463769" y="105.80357142857143"/>
+        </collectionViewCell>
+    </objects>
+</document>

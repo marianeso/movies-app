@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MariFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="homeTable" destination="nfN-NP-mBc" id="ULs-Tt-agu"/>
+                <outlet property="searchBar" destination="TVT-bZ-pHu" id="VOW-4c-MHE"/>
+                <outlet property="switchPopTop" destination="QVu-Vi-gxy" id="y6d-9d-ssg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QVu-Vi-gxy">
+                    <rect key="frame" x="0.0" y="100" width="414" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <segments>
+                        <segment title="POPULAR"/>
+                        <segment title="TOP"/>
+                    </segments>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="didClick:" destination="-1" eventType="valueChanged" id="e2v-ku-jXy"/>
+                    </connections>
+                </segmentedControl>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-bZ-pHu">
+                    <rect key="frame" x="0.0" y="48" width="414" height="56"/>
+                    <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-NP-mBc">
+                    <rect key="frame" x="0.0" y="131" width="414" height="765"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TVT-bZ-pHu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3NO-L4-hZI"/>
+                <constraint firstItem="QVu-Vi-gxy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3sk-v5-znT"/>
+                <constraint firstItem="QVu-Vi-gxy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FiS-Ph-QH2"/>
+                <constraint firstItem="nfN-NP-mBc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="M1U-LZ-JlK"/>
+                <constraint firstItem="nfN-NP-mBc" firstAttribute="top" secondItem="QVu-Vi-gxy" secondAttribute="bottom" id="MGv-9t-e4E"/>
+                <constraint firstItem="nfN-NP-mBc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="asI-7Q-TTX"/>
+                <constraint firstItem="TVT-bZ-pHu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d3f-wF-WzQ"/>
+                <constraint firstItem="QVu-Vi-gxy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="fnO-AK-bcS"/>
+                <constraint firstItem="QVu-Vi-gxy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iG2-80-eO5"/>
+                <constraint firstAttribute="bottom" secondItem="nfN-NP-mBc" secondAttribute="bottom" id="j1F-th-X2b"/>
+                <constraint firstItem="TVT-bZ-pHu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lOu-OF-6Om"/>
+                <constraint firstItem="QVu-Vi-gxy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xHL-j5-Ibj"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+</document>
