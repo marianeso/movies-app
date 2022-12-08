@@ -3,6 +3,7 @@
 ## Ideia do aplicativo
 Aplicativo que consome a TMDB API, onde você pode buscar o filme que deseja, ver os detalhes como sinópse, avaliação, comentários, filmes similares e adicioná-lo a lista de favoritos. 
 
+https://user-images.githubusercontent.com/101711941/206420938-1f4cfec2-85e7-427a-a9e8-9790e748d3fc.mp4
 
 ## Principais Tecnologias
 * Swift e UIKit
